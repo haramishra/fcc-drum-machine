@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { Component } from 'react';
+import data from './data';
+import Buttons from './Buttons';
 
-function Display(props) {
-    return (
-        <div id='display'>
-            
-        </div>
-    )
+export default class Display extends Component {
+    render() {
+        const buttons = data.map((item) =>
+            <Buttons
+                key={item.keyTrigger}
+                trigger={item.keyTrigger}
+                audio={item.url}
+                keyCode={item.keyCode}
+            />
+        )
+        return (
+            <div>
+               {buttons}
+            </div>
+        )
+    }
 }
-
-export default Display

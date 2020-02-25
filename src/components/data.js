@@ -1,4 +1,4 @@
-const bankOne = [{
+const data = [{
     keyCode: 81,
     keyTrigger: 'Q',
     id: 'Heater-1',
@@ -45,4 +45,5 @@ const bankOne = [{
     url: 'https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3'
   },
 ];
-export default bankOne;
+
+export default data;
