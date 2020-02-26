@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Display() {
+function Display(props) {
     return (
-        <div>
-            {this.props.displayId}
+        <div id='display'>
+            {props.id}
         </div>
     )
 }

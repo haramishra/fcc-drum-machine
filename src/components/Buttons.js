@@ -6,6 +6,7 @@ export default class Buttons extends Component {
         super(props);
         this.handleKeyPress = this.handleKeyPress.bind(this);
         this.playSound = this.playSound.bind(this);
+
     }
 
     componentDidMount() {
@@ -25,6 +26,7 @@ export default class Buttons extends Component {
     playSound() {
         const sound = document.getElementById(this.props.trigger);
         sound.play();
+        this.props.display(this.props.id)
     }
 
     render() {
