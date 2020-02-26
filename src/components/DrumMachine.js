@@ -7,12 +7,12 @@ export default class DrumMachine extends Component {
     constructor(props){
         super(props);
         this.state = {
-            display:''
+            display:'Audio'
         }
         this.handleDisplay = this.handleDisplay.bind(this);
     }
-    handleDisplay(e){
-        this.setState({display: e})
+    handleDisplay(id){
+        this.setState({display: id})
     }
     render() {
         const buttons = data.map((item) =>
