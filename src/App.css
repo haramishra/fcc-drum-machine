@@ -1,3 +1,17 @@
-.Drum-machine {
+.drum-machine {
+  margin: 0 auto;
   text-align: center;
+  padding: 4rem;
+  width: 30rem;
+}
+.drum-pad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.buttons {
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }

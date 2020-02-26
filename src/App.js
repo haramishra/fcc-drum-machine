@@ -1,11 +1,11 @@
 import React from 'react';
-import DrumPad from './components/DrumPad'
+import DrumMachine from './components/DrumMachine'
 import './App.css';
 
 function App() {
   return (
-    <div className="App" id='drum-machine'>
-      <DrumPad />
+    <div className="App" class='drum-machine'>
+      <DrumMachine />
     </div>
   );
 }
